@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageEditor</title>
+    <link rel="stylesheet" href="index.Css" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <!-- img -->
+      <div class="img">
+
+
+
+
+
+        <!-- img Box-->
+        <div class="img-box">
+          <img id="img">
+          <canvas id="canvas"></canvas>
+        </div>
+
+        <!-- Upload -->
+        <div class="upload">
+          <label for="upload">Upload</label>
+          <input type="file" id="upload">
+        </div>
+      </div>
+
+      <!-- filters -->
+      <div class="filters">
+        <ul>
+          <li>
+            <label for="staurate">Staurate</label>
+            <input type="range" id="staurate" min="0" max="200" value="100">
+          </li>
+
+          <li>
+            <label for="contrast">Contrast</label>
+            <input type="range" id="contrast" min="0" max="200" value="100">
+          </li>
+
+          <li>
+            <label for="brightness">Brightness</label>
+            <input type="range" id="brightness" min="0" max="200" value="100">
+          </li>
+
+          <li>
+            <label for="sepia">Sepia</label>
+            <input type="range" id="sepia" min="0" max="200" value="0">
+          </li>
+
+          <li>
+            <label for="grayscale">Grayscale</label>
+            <input type="range" id="grayscale" step=".1" min="0" max="1" value="0">
+          </li>
+
+          <li>
+            <label for="blur">Blur</label>
+            <input type="range" id="blur" step=".1" min="0" max="10" value="0">
+          </li>
+
+          <li>
+            <label for="hue-rotate">Hue Rotate</label>
+            <input type="range" id="hue-rotate"  min="0" max="350" value="0">
+          </li>
+          <!-- buttons -->
+          <li>
+            <a download="img" id="download">Download</a>
+            <span onclick="resetValue()">Reset</span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- JavaScript link  -->
+    <script src="index.js"></script>
+  </body>
+</html>
